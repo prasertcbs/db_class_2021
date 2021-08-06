@@ -1,0 +1,2 @@
+# 2602446 DATABASE APPLN MGT (2564/1) 
+* [ ] [Syllabus](./2602446%202564-Sec1.pdf)
