@@ -33,7 +33,7 @@
 * [ ]
 * [ ]
 ## What is database?
-* [ ] [Text](data/Olympic2016Medal.csv) vs [Excel](./data/Olympic2016medal.xlsx) vs [SQL](data/Olympic2016Medal.sql)
+* [ ] [Text](data/Olympic2016Medal.csv) vs [Excel](data/Olympic2016medal.xlsx) vs [SQL](data/Olympic2016Medal.sql)
 * [ ] [Relational Database](https://en.wikipedia.org/wiki/Relational_database)
 * [ ] [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
 ## Why [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)?
@@ -67,7 +67,7 @@
   * [ ] CREATE DATABASE sample;
 * [ ] [CREATE TABLE](https://www.youtube.com/watch?v=7ixlKjykHBY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=20)
   * [ ] class roster
-  * [ ] [Olympic data](./data/Olympic2016Medal.csv)
+  * [ ] [Olympic data](data/Olympic2016Medal.csv)
 * [ ] [INSERT DATA](https://www.youtube.com/watch?v=-STBNF0We_Y&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=68)
 * [ ] [SELECT](https://www.youtube.com/watch?v=WaUFLed0aHk&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=32)
 ## Exercise
