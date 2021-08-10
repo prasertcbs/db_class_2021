@@ -41,6 +41,7 @@
 * [ ] [Text](data/Olympic2016Medal.csv) vs [Excel](data/Olympic2016medal.xlsx) vs [SQL](data/Olympic2016Medal.sql)
 * [ ] [Relational Database](https://en.wikipedia.org/wiki/Relational_database)
 * [ ] [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
+  * [ ] [JSON](https://github.com/prasertcbs/basic-dataset/blob/master/Provinces.json)
 ## Why [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)?
 * [ ] [Who uses PostgreSQL?](https://stackshare.io/postgresql)
 * [ ] Stackoverflow survey
