@@ -1,6 +1,7 @@
 - [2602446 DATABASE APPLN MGT (2021/1)](#2602446-database-appln-mgt-20211)
 - [Week 1](#week-1)
-  - [Materialss](#materialss)
+  - [Approach](#approach)
+  - [Materials](#materials)
     - [Required](#required)
     - [Extra](#extra)
   - [Real world examples](#real-world-examples)
@@ -18,18 +19,22 @@
 * [ ] [github.com](https://github.com/prasertcbs/db_class_2021/tree/week1)
   * [ ] [git clone](https://github.com/prasertcbs/db_class_2021.git)
 # Week 1
-## Materialss
+## Approach
+* [ ] guided tour (navigate) vs. backpack (explore)
+* [ ] searching (focus search -> efficiency) vs. scanning (browse data -> effectiveness)
+## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
 * [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
 * [ ] Yummi book
   * [ ] Chapter 1, 2, 3
 ### Extra
+* [ ] [Birth of RDBMS](./codd.pdf)
 * [ ] [Windows command lines](https://www.youtube.com/watch?v=ryfK_L5SBjo&list=PLoTScYm9O0GFpyK3BixJNjkPBUhJuPCl-&index=1)
 * [ ] [macOS command lines](https://www.youtube.com/watch?v=uBEqnk4Xm7M&list=PLoTScYm9O0GFpyK3BixJNjkPBUhJuPCl-&index=4)
 * [ ] [basic command lines](https://www.youtube.com/watch?v=ryfK_L5SBjo&list=PLoTScYm9O0GFpyK3BixJNjkPBUhJuPCl-)
+* [ ] [git for classroom](https://www.youtube.com/watch?v=EBWT7NIo6kU&list=PLoTScYm9O0GHqT9FCnVqH4bBPjcpViVDQ)
 ## Real world examples
-* [ ]
 * [ ]
 * [ ]
 ## What is database?
