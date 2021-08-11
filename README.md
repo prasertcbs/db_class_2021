@@ -15,12 +15,16 @@
     - [Create database and table](#create-database-and-table)
 - [Week 2](#week-2)
   - [BACKUP/RESTORE](#backuprestore)
+  - [Excel vs. Database](#excel-vs-database)
   - [IMPORT/EXPORT](#importexport)
+    - [Exercises](#exercises)
+      - [CSV, TSV, Excel](#csv-tsv-excel)
   - [SELECT](#select)
   - [OPERATORS](#operators)
     - [math](#math)
-    - [string operators](#string-operators)
-  - [COMPARISON and LOGICAL OPERATORS](#comparison-and-logical-operators)
+    - [string](#string)
+    - [comparison](#comparison)
+    - [logical](#logical)
   - [AGGREGATE FUNCTIONS](#aggregate-functions)
 
 # 2602446 DATABASE APPLN MGT (2021/1) 
@@ -51,7 +55,6 @@
 * [x] [git for classroom](https://www.youtube.com/watch?v=EBWT7NIo6kU&list=PLoTScYm9O0GHqT9FCnVqH4bBPjcpViVDQ)
 ## Real world examples
 * [ ] [foodpanda](https://www.foodpanda.co.th/)
-* [ ]
 ## What is database?
 * [ ] [Text](data/Olympic2016Medal.csv) vs [Excel](data/Olympic2016medal.xlsx) vs [SQL](data/Olympic2016Medal.sql)
 * [ ] [Relational Database](https://en.wikipedia.org/wiki/Relational_database)
@@ -99,8 +102,16 @@
 * [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
   * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
 * [ ] [disney](https://github.com/prasertcbs/postgresql/blob/master/disney.tar)
+## Excel vs. Database
+* [ ] [yummi Excel](https://github.com/prasertcbs/postgresql/blob/master/yummi_tables.xlsx)
 ## IMPORT/EXPORT
-* [ ] CSV, TSV, Excel
+### Exercises
+#### CSV, TSV, Excel
+  * [ ] CSV
+    * [ ] [Olympic2016](data/Olympic2016Medal.csv)
+  * [ ] SQL INSERT script
+    * [ ] [Olympic2016](data/Olympic2016Medal.sql)
+
 
 | YouTube                                                                                                     | Title                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,12 +132,13 @@
 ### math
 * [ ] `+, -, *, /, ^`
 * [ ] order of math operations
-### string operators
+### string
 * [ ] Concatenate (`||`)
-## COMPARISON and LOGICAL OPERATORS
+### comparison 
 * [ ] `=, >, <, !=`
+* [ ] LIKE, ILIKE, `~*`
+### logical
 * [ ] AND, OR, NOT, IN, BETWEEN
-* [ ] LIKE, ILIKE, ~*
 * [ ] NULL, COALESCE
 ## AGGREGATE FUNCTIONS
 * [ ] COUNT
