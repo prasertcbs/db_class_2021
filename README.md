@@ -13,6 +13,15 @@
   - [Structured Query Language (SQL)](#structured-query-language-sql)
   - [Exercise](#exercise)
     - [Create database and table](#create-database-and-table)
+- [Week 2](#week-2)
+  - [BACKUP/RESTORE](#backuprestore)
+  - [IMPORT/EXPORT](#importexport)
+  - [SELECT](#select)
+  - [OPERATORS](#operators)
+    - [math](#math)
+    - [string operators](#string-operators)
+  - [COMPARISON and LOGICAL OPERATORS](#comparison-and-logical-operators)
+  - [AGGREGATE FUNCTIONS](#aggregate-functions)
 
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # Week 1
@@ -85,3 +94,43 @@
 ## Exercise
 ### Create database and table
 * [ ] [Spotify charts](https://spotifycharts.com/regional)
+# Week 2
+## BACKUP/RESTORE
+* [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
+  * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
+* [ ] [disney](https://github.com/prasertcbs/postgresql/blob/master/disney.tar)
+## IMPORT/EXPORT
+* [ ] CSV, TSV, Excel
+
+| YouTube                                                                                                     | Title                                                                                                                                  |
+|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| <a href=https://youtu.be/6-2XrMUEbMw><img src=https://i.ytimg.com/vi/6-2XrMUEbMw/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/6-2XrMUEbMw">สอน PostgreSQL: การ import ไฟล์ CSV เข้ามาในตาราง</a>                                             |
+| <a href=https://youtu.be/oauQtZUU4Wk><img src=https://i.ytimg.com/vi/oauQtZUU4Wk/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/oauQtZUU4Wk">เข้าใจรหัสสำหรับเก็บอักขระภาษาไทย Windows 874 และ UTF-8 พร้อมวิธีการเปิดและแปลงไฟล์</a>                   |
+| <a href=https://youtu.be/xIDN46Hkj_M><img src=https://i.ytimg.com/vi/xIDN46Hkj_M/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/xIDN46Hkj_M">สอน PostgreSQL: การ import ไฟล์ที่มีตัวอักษรภาษาไทยที่เก็บด้วยรหัส UTF-8</a>                               |
+| <a href=https://youtu.be/U_u4PMuqs_k><img src=https://i.ytimg.com/vi/U_u4PMuqs_k/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/U_u4PMuqs_k">สอน PostgreSQL:  การ export ตารางเป็นไฟล์ CSV (Comma Separated Values)</a>                        |
+| <a href=https://youtu.be/WaUFLed0aHk><img src=https://i.ytimg.com/vi/WaUFLed0aHk/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/WaUFLed0aHk">สอน PostgreSQL:  การใช้คำสั่ง SELECT ในการเลือกแถวข้อมูลจากตาราง</a>                                  |
+
+## SELECT
+* [ ] DISTINCT
+* [ ] LIMIT
+* [ ] WHERE
+* [ ] ORDER BY
+* [ ] GROUP BY
+* [ ] HAVING
+## OPERATORS
+### math
+* [ ] `+, -, *, /, ^`
+* [ ] order of math operations
+### string operators
+* [ ] Concatenate (`||`)
+## COMPARISON and LOGICAL OPERATORS
+* [ ] `=, >, <, !=`
+* [ ] AND, OR, NOT, IN, BETWEEN
+* [ ] LIKE, ILIKE, ~*
+* [ ] NULL, COALESCE
+## AGGREGATE FUNCTIONS
+* [ ] COUNT
+* [ ] SUM
+* [ ] AVG
+* [ ] MIN
+* [ ] MAX
