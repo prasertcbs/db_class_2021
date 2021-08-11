@@ -1,5 +1,4 @@
 - [2602446 DATABASE APPLN MGT (2021/1)](#2602446-database-appln-mgt-20211)
-- [Week 1](#week-1)
   - [Approach](#approach)
   - [Materials](#materials)
     - [Required](#required)
@@ -18,7 +17,12 @@
 * [ ] [Syllabus](./2602446%202564-Sec1.pdf)
 * [ ] [github.com](https://github.com/prasertcbs/db_class_2021/tree/week1)
   * [ ] [git clone](https://github.com/prasertcbs/db_class_2021.git)
-# Week 1
+* [ ] registration
+* [ ] communication channel and protocol
+  * [ ] e-mail
+  * [ ] professional manner
+  * [ ] zoom name
+    * [ ] student id first name (Thai)# Week 1
 ## Approach
 * [ ] guided tour (navigate) vs. backpack (explore)
 * [ ] searching (focus search -> efficiency) vs. scanning (browse data -> effectiveness)
