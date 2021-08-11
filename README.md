@@ -1,4 +1,5 @@
 - [2602446 DATABASE APPLN MGT (2021/1)](#2602446-database-appln-mgt-20211)
+- [Week 1](#week-1)
   - [Approach](#approach)
   - [Materials](#materials)
     - [Required](#required)
@@ -14,6 +15,7 @@
     - [Create database and table](#create-database-and-table)
 
 # 2602446 DATABASE APPLN MGT (2021/1) 
+# Week 1
 * [ ] [Syllabus](./2602446%202564-Sec1.pdf)
 * [ ] [github.com](https://github.com/prasertcbs/db_class_2021/tree/week1)
   * [ ] [git clone](https://github.com/prasertcbs/db_class_2021.git)
@@ -22,7 +24,7 @@
   * [ ] e-mail
   * [ ] professional manner
   * [ ] zoom name
-    * [ ] student id first name (Thai)# Week 1
+    * [ ] student id first name (Thai)
 ## Approach
 * [ ] guided tour (navigate) vs. backpack (explore)
 * [ ] searching (focus search -> efficiency) vs. scanning (browse data -> effectiveness)
@@ -39,7 +41,7 @@
 * [ ] [basic command lines](https://www.youtube.com/watch?v=ryfK_L5SBjo&list=PLoTScYm9O0GFpyK3BixJNjkPBUhJuPCl-)
 * [ ] [git for classroom](https://www.youtube.com/watch?v=EBWT7NIo6kU&list=PLoTScYm9O0GHqT9FCnVqH4bBPjcpViVDQ)
 ## Real world examples
-* [ ]
+* [ ] [foodpanda](https://www.foodpanda.co.th/)
 * [ ]
 ## What is database?
 * [ ] [Text](data/Olympic2016Medal.csv) vs [Excel](data/Olympic2016medal.xlsx) vs [SQL](data/Olympic2016Medal.sql)
