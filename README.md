@@ -14,6 +14,7 @@
   - [Exercise](#exercise)
     - [Create database and table](#create-database-and-table)
 - [Week 2](#week-2)
+  - [Stackoverflow survey 2021](#stackoverflow-survey-2021)
   - [BACKUP/RESTORE](#backuprestore)
   - [Excel vs. Database](#excel-vs-database)
   - [IMPORT/EXPORT](#importexport)
@@ -69,6 +70,9 @@
   * [x] [2020](https://insights.stackoverflow.com/survey/2020#most-popular-technologies)
     * [x] [popular](https://insights.stackoverflow.com/survey/2020#technology-databases)
     * [x] [most loved](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-databases)
+  * [ ] [2021](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies)
+    * [ ] [popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
+    * [ ] [most loved](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
 ## Examples
 * [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
   * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
@@ -98,6 +102,10 @@
 ### Create database and table
 * [ ] [Spotify charts](https://spotifycharts.com/regional)
 # Week 2
+## Stackoverflow survey 2021
+* [ ] [2021](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies)
+  * [ ] [popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
+  * [ ] [most loved](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
 ## BACKUP/RESTORE
 * [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
   * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
@@ -122,12 +130,12 @@
 | <a href=https://youtu.be/WaUFLed0aHk><img src=https://i.ytimg.com/vi/WaUFLed0aHk/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/WaUFLed0aHk">สอน PostgreSQL:  การใช้คำสั่ง SELECT ในการเลือกแถวข้อมูลจากตาราง</a>                                  |
 
 ## SELECT
-* [ ] DISTINCT
-* [ ] LIMIT
-* [ ] WHERE
-* [ ] ORDER BY
-* [ ] GROUP BY
-* [ ] HAVING
+* [ ] `DISTINCT`
+* [ ] `LIMIT`
+* [ ] `WHERE`
+* [ ] `ORDER BY`
+* [ ] `GROUP BY`
+* [ ] `HAVING`
 ## OPERATORS
 ### math
 * [ ] `+, -, *, /, ^`
@@ -136,10 +144,10 @@
 * [ ] Concatenate (`||`)
 ### comparison 
 * [ ] `=, >, <, !=`
-* [ ] LIKE, ILIKE, `~*`
+* [ ] `LIKE`, `ILIKE`, `~*`
 ### logical
-* [ ] AND, OR, NOT, IN, BETWEEN
-* [ ] NULL, COALESCE
+* [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
+* [ ] `NULL`, `COALESCE`
 ## AGGREGATE FUNCTIONS
 * [ ] COUNT
 * [ ] SUM
