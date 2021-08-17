@@ -14,8 +14,16 @@
   - [Exercise](#exercise)
     - [Create database and table](#create-database-and-table)
 - [Week 2](#week-2)
-  - [Stackoverflow survey 2021](#stackoverflow-survey-2021)
+  - [Materials](#materials-1)
+    - [Required](#required-1)
+  - [To do :memo:](#to-do-memo)
+    - [Stackoverflow survey 2021](#stackoverflow-survey-2021)
+    - [PDPA (Personal Data Protection Act) and GDPR (General Data Protection Regulation)](#pdpa-personal-data-protection-act-and-gdpr-general-data-protection-regulation)
+    - [google classroom](#google-classroom)
   - [BACKUP/RESTORE](#backuprestore)
+  - [pg_restore tips](#pg_restore-tips)
+    - [print summarized TOC of the archive](#print-summarized-toc-of-the-archive)
+    - [convert pg_backup tar/custom format (with compression) to sql script](#convert-pg_backup-tarcustom-format-with-compression-to-sql-script)
   - [Excel vs. Database](#excel-vs-database)
   - [IMPORT/EXPORT](#importexport)
     - [Exercises](#exercises)
@@ -27,7 +35,7 @@
     - [comparison](#comparison)
     - [logical](#logical)
   - [AGGREGATE FUNCTIONS](#aggregate-functions)
-
+---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # Week 1
 * [x] [Syllabus](./2602446%202564-Sec1.pdf)
@@ -87,8 +95,8 @@
 * [x] [psql](https://www.youtube.com/watch?v=hs5IxXjUkO0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=10)
 * [x] [pgadmin4](https://www.youtube.com/watch?v=8XfFkBneXRI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=9)
 * [ ] [Visual Studio Code](https://www.youtube.com/watch?v=l2nReOmv2I0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=13)
+* [ ] [Azure Data Studio](https://www.youtube.com/watch?v=gQ-ElT0CNAs&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz)
 * [ ] [Jupyter Notebook](https://www.youtube.com/watch?v=bgHPGiE0rkg&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=14)
-* [ ] [Azure Data Studio](https://www.youtube.com/watch?v=Z_VbAq5dU88&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=12)
 ## Structured Query Language (SQL)
 * [x] Create, Read, Update, Delete (CRUD)
 * [x] [CREATE DATABASE](https://www.youtube.com/watch?v=OWxOt50i8Bw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=16)
@@ -100,16 +108,39 @@
 * [x] [SELECT](https://www.youtube.com/watch?v=WaUFLed0aHk&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=32)
 ## Exercise
 ### Create database and table
-* [ ] [Spotify charts](https://spotifycharts.com/regional)
+* [ ] [Spotify charts](https://spotifycharts.com/regional)    
+
+---
 # Week 2
-## Stackoverflow survey 2021
+## Materials
+### Required
+* [x] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
+* [x] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
+* [x] Yummi book
+  * [ ] Chapter 7, 11
+## To do :memo:
+### Stackoverflow survey 2021
 * [ ] [2021](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies)
   * [ ] [popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
   * [ ] [most loved](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
+### PDPA (Personal Data Protection Act) and GDPR (General Data Protection Regulation)
+* [ ] zoom classroom clip and other materials (book, student data)
+### google classroom
+  * [ ] CU account (@student.chula.ac.th)
+  * [ ] test submission (yummi notebook)
 ## BACKUP/RESTORE
 * [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
   * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
 * [ ] [disney](https://github.com/prasertcbs/postgresql/blob/master/disney.tar)
+## pg_restore tips
+### print summarized TOC of the archive
+```sh
+pg_restore -l disney.tar
+```
+### convert pg_backup tar/custom format (with compression) to sql script
+```sh
+pg_restore -f disney.sql disney.tar
+```
 ## Excel vs. Database
 * [ ] [yummi Excel](https://github.com/prasertcbs/postgresql/blob/master/yummi_tables.xlsx)
 ## IMPORT/EXPORT
@@ -138,8 +169,13 @@
 * [ ] `HAVING`
 ## OPERATORS
 ### math
-* [ ] `+, -, *, /, ^`
+* [ ] `+ (add), - (subtract), * (multiply), / (divide), % (mod), ^ (power)`
+  * [ ] integer division
+    * [ ] `select 5 / 2;`
+    * [ ] `select 5.0 / 2;`
+    * [ ] `select 5::real /2;`
 * [ ] order of math operations
+  * [ ] `select 6 + 10 * 2 / 5 - 3;`
 ### string
 * [ ] Concatenate (`||`)
 ### comparison 
@@ -149,8 +185,8 @@
 * [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
 * [ ] `NULL`, `COALESCE`
 ## AGGREGATE FUNCTIONS
-* [ ] COUNT
-* [ ] SUM
-* [ ] AVG
-* [ ] MIN
-* [ ] MAX
+* [ ] `COUNT`
+* [ ] `SUM`
+* [ ] `AVG`
+* [ ] `MIN`
+* [ ] `MAX`
