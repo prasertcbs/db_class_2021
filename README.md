@@ -20,14 +20,16 @@
     - [Stackoverflow survey 2021](#stackoverflow-survey-2021)
     - [PDPA (Personal Data Protection Act) and GDPR (General Data Protection Regulation)](#pdpa-personal-data-protection-act-and-gdpr-general-data-protection-regulation)
     - [google classroom](#google-classroom)
-  - [BACKUP/RESTORE](#backuprestore)
+  - [RESTORE DATABASE](#restore-database)
   - [pg_restore tips](#pg_restore-tips)
     - [print summarized TOC of the archive](#print-summarized-toc-of-the-archive)
+    - [restore disney.tar to disney database](#restore-disneytar-to-disney-database)
     - [convert pg_backup tar/custom format (with compression) to sql script](#convert-pg_backup-tarcustom-format-with-compression-to-sql-script)
   - [Excel vs. Database](#excel-vs-database)
   - [IMPORT/EXPORT](#importexport)
     - [Exercises](#exercises)
       - [CSV, TSV, Excel](#csv-tsv-excel)
+  - [Cheat sheet](#cheat-sheet)
   - [SELECT](#select)
   - [OPERATORS](#operators)
     - [math](#math)
@@ -117,39 +119,43 @@
 * [x] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
 * [x] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
 * [x] Yummi book
-  * [ ] Chapter 7, 11
+  * [x] Chapter 7, 11
 ## To do :memo:
 ### Stackoverflow survey 2021
-* [ ] [2021](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies)
-  * [ ] [popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
-  * [ ] [most loved](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
+* [x] [2021](https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies)
+  * [x] [popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
+  * [x] [most loved](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-databases)
 ### PDPA (Personal Data Protection Act) and GDPR (General Data Protection Regulation)
-* [ ] zoom classroom clip and other materials (book, student data)
+* [x] zoom classroom clip and other materials (book, student data)
 ### google classroom
-  * [ ] CU account (@student.chula.ac.th)
-  * [ ] test submission (yummi notebook)
-## BACKUP/RESTORE
-* [ ] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
-  * [ ] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
-* [ ] [disney](https://github.com/prasertcbs/postgresql/blob/master/disney.tar)
+  * [x] CU account (@student.chula.ac.th)
+  * [x] test submission (yummi notebook)
+## RESTORE DATABASE
+* [x] [yummi_plain](https://github.com/prasertcbs/postgresql/blob/master/yummi_plain.tar)
+  * [x] [Restore yummi](https://www.youtube.com/watch?v=KoBVSsUBZRc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=123)
+* [x] [disney](https://github.com/prasertcbs/postgresql/blob/master/disney.tar)
 ## pg_restore tips
 ### print summarized TOC of the archive
 ```sh
 pg_restore -l disney.tar
+```
+### restore disney.tar to disney database
+```sh
+pg_restore --host "localhost" --port "5432" --username "postgres" --dbname "disney" --verbose "disney.tar"
 ```
 ### convert pg_backup tar/custom format (with compression) to sql script
 ```sh
 pg_restore -f disney.sql disney.tar
 ```
 ## Excel vs. Database
-* [ ] [yummi Excel](https://github.com/prasertcbs/postgresql/blob/master/yummi_tables.xlsx)
+* [x] [yummi Excel](https://github.com/prasertcbs/postgresql/blob/master/yummi_tables.xlsx)
 ## IMPORT/EXPORT
 ### Exercises
 #### CSV, TSV, Excel
-  * [ ] CSV
-    * [ ] [Olympic2016](data/Olympic2016Medal.csv)
-  * [ ] SQL INSERT script
-    * [ ] [Olympic2016](data/Olympic2016Medal.sql)
+* [x] CSV
+  * [x] [Olympic2016](data/Olympic2016Medal.csv)
+* [x] SQL INSERT script
+  * [x] [Olympic2016](data/Olympic2016Medal.sql)
 
 
 | YouTube                                                                                                     | Title                                                                                                                                  |
@@ -160,26 +166,28 @@ pg_restore -f disney.sql disney.tar
 | <a href=https://youtu.be/U_u4PMuqs_k><img src=https://i.ytimg.com/vi/U_u4PMuqs_k/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/U_u4PMuqs_k">สอน PostgreSQL:  การ export ตารางเป็นไฟล์ CSV (Comma Separated Values)</a>                        |
 | <a href=https://youtu.be/WaUFLed0aHk><img src=https://i.ytimg.com/vi/WaUFLed0aHk/mqdefault.jpg />&nbsp;</a> | <a href="https://youtu.be/WaUFLed0aHk">สอน PostgreSQL:  การใช้คำสั่ง SELECT ในการเลือกแถวข้อมูลจากตาราง</a>                                  |
 
+## Cheat sheet
+* [basie SQL](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 ## SELECT
 * [ ] `DISTINCT`
-* [ ] `LIMIT`
-* [ ] `WHERE`
-* [ ] `ORDER BY`
+* [x] `LIMIT`
+* [x] `WHERE`
+* [x] `ORDER BY`
 * [ ] `GROUP BY`
 * [ ] `HAVING`
 ## OPERATORS
 ### math
-* [ ] `+ (add), - (subtract), * (multiply), / (divide), % (mod), ^ (power)`
-  * [ ] integer division
-    * [ ] `select 5 / 2;`
-    * [ ] `select 5.0 / 2;`
-    * [ ] `select 5::real /2;`
-* [ ] order of math operations
-  * [ ] `select 6 + 10 * 2 / 5 - 3;`
+* [x] `+ (add), - (subtract), * (multiply), / (divide), % (mod), ^ (power)`
+  * [x] integer division
+    * [x] `select 5 / 2;`
+    * [x] `select 5.0 / 2;`
+    * [x] `select 5::real /2;`
+* [x] order of math operations
+  * [x] `select 6 + 10 * 2 / 5 - 3;`
 ### string
-* [ ] Concatenate (`||`)
+* [x] Concatenate (`||`)
 ### comparison 
-* [ ] `=, >, <, !=`
+* [x] `=, >, <, !=`
 * [ ] `LIKE`, `ILIKE`, `~*`
 ### logical
 * [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
