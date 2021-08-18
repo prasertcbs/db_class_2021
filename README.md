@@ -30,13 +30,16 @@
     - [Exercises](#exercises)
       - [CSV, TSV, Excel](#csv-tsv-excel)
   - [Cheat sheet](#cheat-sheet)
+  - [* basie SQL](#-basie-sql)
+- [Week 3](#week-3)
+  - [Materials](#materials-2)
+    - [Required](#required-2)
+  - [BACKUP](#backup)
   - [SELECT](#select)
-  - [OPERATORS](#operators)
-    - [math](#math)
-    - [string](#string)
     - [comparison](#comparison)
     - [logical](#logical)
   - [AGGREGATE FUNCTIONS](#aggregate-functions)
+  - [DATE & TIME](#date--time)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # Week 1
@@ -168,6 +171,23 @@ pg_restore -f disney.sql disney.tar
 
 ## Cheat sheet
 * [basie SQL](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
+---
+# Week 3
+## Materials
+### Required
+* [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
+* [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
+* [ ] Yummi book
+  * [ ] Chapter 7, 11
+## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
+* [ ] database (compress level=5)
+```sh
+pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgres" --verbose --format=c --blobs --compress "5" "disney"
+```
+* [ ] table (output as create table + insert into ...)
+```sh
+pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
+```
 ## SELECT
 * [ ] `DISTINCT`
 * [x] `LIMIT`
@@ -175,19 +195,8 @@ pg_restore -f disney.sql disney.tar
 * [x] `ORDER BY`
 * [ ] `GROUP BY`
 * [ ] `HAVING`
-## OPERATORS
-### math
-* [x] `+ (add), - (subtract), * (multiply), / (divide), % (mod), ^ (power)`
-  * [x] integer division
-    * [x] `select 5 / 2;`
-    * [x] `select 5.0 / 2;`
-    * [x] `select 5::real /2;`
-* [x] order of math operations
-  * [x] `select 6 + 10 * 2 / 5 - 3;`
-### string
-* [x] Concatenate (`||`)
 ### comparison 
-* [x] `=, >, <, !=`
+* [x] `=`, `>`, `<`, `!=`
 * [ ] `LIKE`, `ILIKE`, `~*`
 ### logical
 * [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
@@ -198,3 +207,4 @@ pg_restore -f disney.sql disney.tar
 * [ ] `AVG`
 * [ ] `MIN`
 * [ ] `MAX`
+## DATE & TIME
