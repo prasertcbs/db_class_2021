@@ -32,6 +32,7 @@
   - [Cheat sheet](#cheat-sheet)
   - [* basie SQL](#-basie-sql)
 - [Week 3](#week-3)
+  - [check class roster](#check-class-roster)
   - [Materials](#materials-2)
     - [Required](#required-2)
   - [BACKUP](#backup)
@@ -173,6 +174,7 @@ pg_restore -f disney.sql disney.tar
 * [basie SQL](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 ---
 # Week 3
+## check class roster
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -196,7 +198,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] `GROUP BY`
 * [ ] `HAVING`
 ### comparison 
-* [x] `=`, `>`, `<`, `!=`
+* [x] `=`, `>`, `>=`, `<`, `<=`, `!=`
 * [ ] `LIKE`, `ILIKE`, `~*`
 ### logical
 * [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
@@ -208,3 +210,8 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] `MIN`
 * [ ] `MAX`
 ## DATE & TIME
+* [ ] SELECT CURRENT_DATE, CURRENT_TIME
+* [ ] INTERVAL
+* [ ] TIMESTAMP
+* [ ] NOW()
+* [ ] AGE()
