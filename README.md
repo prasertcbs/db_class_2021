@@ -30,7 +30,6 @@
     - [Exercises](#exercises)
       - [CSV, TSV, Excel](#csv-tsv-excel)
   - [Cheat sheet](#cheat-sheet)
-  - [* basie SQL](#-basie-sql)
 - [Week 3](#week-3)
   - [check class roster](#check-class-roster)
   - [Materials](#materials-2)
@@ -40,10 +39,12 @@
     - [comparison](#comparison)
     - [logical](#logical)
   - [AGGREGATE FUNCTIONS](#aggregate-functions)
+  - [CAST (`::`)](#cast-)
   - [DATE & TIME](#date--time)
+    - [script](#script)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
-# Week 1
+# [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
 * [x] [Syllabus](./2602446%202564-Sec1.pdf)
 * [x] [github.com](https://github.com/prasertcbs/db_class_2021/tree/week1)
   * [x] [git clone](https://github.com/prasertcbs/db_class_2021.git)
@@ -117,7 +118,7 @@
 * [ ] [Spotify charts](https://spotifycharts.com/regional)    
 
 ---
-# Week 2
+# [Week 2](https://github.com/prasertcbs/db_class_2021/tree/week2)
 ## Materials
 ### Required
 * [x] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -172,8 +173,9 @@ pg_restore -f disney.sql disney.tar
 
 ## Cheat sheet
 * [basie SQL](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
+
 ---
-# Week 3
+# [Week 3](https://github.com/prasertcbs/db_class_2021/tree/week3)
 ## check class roster
 ## Materials
 ### Required
@@ -191,27 +193,69 @@ pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgre
 pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
 ```
 ## SELECT
-* [ ] `DISTINCT`
+* [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 * [x] `LIMIT`
 * [x] `WHERE`
 * [x] `ORDER BY`
-* [ ] `GROUP BY`
-* [ ] `HAVING`
-### comparison 
-* [x] `=`, `>`, `>=`, `<`, `<=`, `!=`
-* [ ] `LIKE`, `ILIKE`, `~*`
+* [ ] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
+* [ ] [`HAVING`](https://www.youtube.com/watch?v=5S0pIX9CocU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=50)
+### comparison
+* [ ] [BOOLEAN](https://www.youtube.com/watch?v=uHMK1WfQ-O0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=39)
+* [x] `=`, `>`, `>=`, `<`, `<=`, 
+* [ ] `!=` (not equal)
+* [ ] `LIKE`, `ILIKE`
+* [ ] `~*` (regular expression)
 ### logical
-* [ ] `AND`, `OR`, `NOT`, `IN`, `BETWEEN`
+* [ ] [`AND`, `OR`, `NOT`, `IN`, `BETWEEN`](https://www.youtube.com/watch?v=JOBBM5embno&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=40)
 * [ ] `NULL`, `COALESCE`
-## AGGREGATE FUNCTIONS
+## [AGGREGATE FUNCTIONS](https://www.youtube.com/watch?v=o--rsYuxBhg&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=48)
 * [ ] `COUNT`
 * [ ] `SUM`
 * [ ] `AVG`
 * [ ] `MIN`
 * [ ] `MAX`
-## DATE & TIME
-* [ ] SELECT CURRENT_DATE, CURRENT_TIME
-* [ ] INTERVAL
-* [ ] TIMESTAMP
-* [ ] NOW()
-* [ ] AGE()
+## CAST (`::`)
+## [DATE & TIME](https://www.youtube.com/watch?v=UFCnhnOs7nA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=52)
+* [ ] `SELECT CURRENT_DATE, CURRENT_TIME`
+* [ ] `INTERVAL`
+* [ ] `TIMESTAMP`
+* [ ] `NOW()`
+* [ ] `AGE('1995-07-20'::DATE)`
+* [ ] [format date/time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
+### script
+```sql
+-- เข้าใจเรื่องวันและเวลาแบบเบื้องต้นของ PostgreSQL
+-- YouTube: https://youtu.be/UFCnhnOs7nA
+
+-- วันเวลาปัจจุบัน
+select current_date, current_time, localtimestamp, now();
+
+-- คำนวณหาอายุว่าเป็นกี่ปี กี่เดือน กับอีกกี่วัน
+select age('2000-07-11'::date);
+select age('2000-07-11'::timestamp);
+select age(timestamp '2000-07-11');
+
+-- การบวกวัน
+select current_date, current_date + 5;
+
+-- การใช้ interval แบบต่าง ๆ
+select LOCALTIMESTAMP, LOCALTIMESTAMP + '5 days'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP - '5 days'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP - '5 months'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP + '1 year'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP + '2 hours'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP + '12 minutes'::interval;
+select LOCALTIMESTAMP, LOCALTIMESTAMP + '2 hours 12 minutes'::interval;
+
+-- การสร้างวันเวลา
+select make_date(2019, 9, 10), make_time(14, 17, 30), make_timestamp(2019, 9, 10, 14, 17, 30);
+
+-- การหาผลต่างของวัน
+select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp;
+
+-- การดึงส่วนต่าง ๆ ของ interval
+select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
+    extract(day from '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp),
+    extract(hour from '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp),
+    extract(minute from '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp)
+```
