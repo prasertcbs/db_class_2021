@@ -178,9 +178,9 @@ pg_restore -f disney.sql disney.tar
 ---
 # [Week 3](https://github.com/prasertcbs/db_class_2021/tree/week3)
 ## Announcement:
-* [ ] check class roster
-* [ ] Quiz 1 (40 points) 29-Sep-2021 09:00-11:00
-  * [ ] Zoom พร้อมเปิดกล้อง
+* [x] check class roster
+* [x] Quiz 1 (40 points) 29-Sep-2021 09:00-11:00
+  * [x] Zoom พร้อมเปิดกล้อง
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -199,35 +199,38 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ## `SELECT`
 * [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 * [x] `LIMIT`
+  * [x] first n rows
+  * [x] last n rows
 * [x] `WHERE`
 * [x] `ORDER BY`
-* [ ] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
+* [x] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
 * [ ] [`HAVING`](https://www.youtube.com/watch?v=5S0pIX9CocU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=50)
 ## `ALIAS`
-* [ ] column
+* [x] column
 * [ ] table
 ### comparison
-* [ ] [BOOLEAN](https://www.youtube.com/watch?v=uHMK1WfQ-O0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=39)
+* [x] [BOOLEAN](https://www.youtube.com/watch?v=uHMK1WfQ-O0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=39)
 * [x] `=`, `>`, `>=`, `<`, `<=`, 
-* [ ] `!=` (not equal)
-* [ ] `LIKE`, `ILIKE`
+* [x] `!=` (not equal)
+* [x] `LIKE`, `ILIKE`
 * [ ] `~*` (regular expression)
 ### logical
-* [ ] [`AND`, `OR`, `NOT`, `IN`, `BETWEEN`](https://www.youtube.com/watch?v=JOBBM5embno&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=40)
+* [x] [`AND`, `OR`, `NOT`, `IN`, `BETWEEN`](https://www.youtube.com/watch?v=JOBBM5embno&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=40)
 * [ ] `NULL`, `COALESCE`
 ## [AGGREGATE FUNCTIONS](https://www.youtube.com/watch?v=o--rsYuxBhg&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=48)
-* [ ] `COUNT`
-* [ ] `SUM`
-* [ ] `AVG`
-* [ ] `MIN`
-* [ ] `MAX`
-## CAST (`::`)
+* [x] `COUNT`
+* [x] `SUM`
+* [x] `AVG`
+* [x] `MIN`
+* [x] `MAX`
+## [x] CAST (`::`)
 ## [DATE & TIME](https://www.youtube.com/watch?v=UFCnhnOs7nA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=52)
 * [ ] `SELECT CURRENT_DATE, CURRENT_TIME`
 * [ ] `INTERVAL`
-* [ ] `TIMESTAMP`
+* [x] `TIMESTAMP`
 * [ ] `NOW()`
-* [ ] `AGE('1995-07-20'::DATE)`
+* [x] `DATE_PART()`, `EXTRACT()`
+* [x] `AGE('1995-07-20'::DATE)`
 * [ ] [format date/time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
 ### script
 ```sql
