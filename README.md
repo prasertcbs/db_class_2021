@@ -34,7 +34,6 @@
   - [Announcement:](#announcement)
   - [Materials](#materials-2)
     - [Required](#required-2)
-  - [BACKUP](#backup)
   - [`SELECT`](#select)
   - [`ALIAS`](#alias)
     - [comparison](#comparison)
@@ -43,6 +42,17 @@
   - [CAST (`::`)](#cast-)
   - [DATE & TIME](#date--time)
     - [script](#script)
+- [Week 4](#week-4)
+  - [Materials](#materials-3)
+    - [Required](#required-3)
+  - [BACKUP](#backup)
+  - [`SELECT`](#select-1)
+  - [`ALIAS`](#alias-1)
+  - [JOIN](#join)
+  - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except)
+  - [CASE...WHEN](#casewhen)
+  - [FORMAT](#format)
+  - [* [ ] String](#---string)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
@@ -187,15 +197,6 @@ pg_restore -f disney.sql disney.tar
 * [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
 * [ ] Yummi book
   * [ ] Chapter 7, 11
-## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
-* [ ] database (compress level=5)
-```sh
-pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgres" --verbose --format=c --blobs --compress "5" "disney"
-```
-* [ ] table (output as create table + insert into ...)
-```sh
-pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
-```
 ## `SELECT`
 * [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 * [x] `LIMIT`
@@ -204,7 +205,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [x] `WHERE`
 * [x] `ORDER BY`
 * [x] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
-* [ ] [`HAVING`](https://www.youtube.com/watch?v=5S0pIX9CocU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=50)
+* [x] [`HAVING`](https://www.youtube.com/watch?v=5S0pIX9CocU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=50)
 ## `ALIAS`
 * [x] column
 * [ ] table
@@ -223,7 +224,10 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [x] `AVG`
 * [x] `MIN`
 * [x] `MAX`
-## [x] CAST (`::`)
+## CAST (`::`)
+* [x] `date`
+* [x] `timestamp`
+* [x] `int`
 ## [DATE & TIME](https://www.youtube.com/watch?v=UFCnhnOs7nA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=52)
 * [ ] `SELECT CURRENT_DATE, CURRENT_TIME`
 * [ ] `INTERVAL`
@@ -269,3 +273,39 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
     extract(hour from '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp),
     extract(minute from '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp)
 ```
+
+---
+# [Week 4](https://github.com/prasertcbs/db_class_2021/tree/week4)
+## Materials
+### Required
+* [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
+* [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
+* [ ] Yummi book
+  * [ ] Chapter 11, 12
+## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
+* [ ] data directory
+  * [ ] show data_directory;
+* [ ] database (compress level=5)
+```sh
+pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgres" --verbose --format=c --blobs --compress "5" "disney"
+```
+* [ ] table (output as create table + insert into ...)
+```sh
+pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
+```
+## `SELECT`
+* [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
+## `ALIAS`
+* table
+## JOIN
+  * [ ] [`INNER`](https://www.youtube.com/watch?v=1TW6VdNdOpQ&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=57)
+  * [ ] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
+  * [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
+  * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
+## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
+## [CASE...WHEN](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
+## FORMAT
+* [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
+* [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
+* [ ] [String](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
+---
