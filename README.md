@@ -31,11 +31,12 @@
       - [CSV, TSV, Excel](#csv-tsv-excel)
   - [Cheat sheet](#cheat-sheet)
 - [Week 3](#week-3)
-  - [check class roster](#check-class-roster)
+  - [Announcement:](#announcement)
   - [Materials](#materials-2)
     - [Required](#required-2)
   - [BACKUP](#backup)
-  - [SELECT](#select)
+  - [`SELECT`](#select)
+  - [`ALIAS`](#alias)
     - [comparison](#comparison)
     - [logical](#logical)
   - [AGGREGATE FUNCTIONS](#aggregate-functions)
@@ -176,7 +177,10 @@ pg_restore -f disney.sql disney.tar
 
 ---
 # [Week 3](https://github.com/prasertcbs/db_class_2021/tree/week3)
-## check class roster
+## Announcement:
+* [ ] check class roster
+* [ ] Quiz 1 (40 points) 29-Sep-2021 09:00-11:00
+  * [ ] Zoom พร้อมเปิดกล้อง
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -192,13 +196,16 @@ pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgre
 ```sh
 pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
 ```
-## SELECT
+## `SELECT`
 * [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 * [x] `LIMIT`
 * [x] `WHERE`
 * [x] `ORDER BY`
 * [ ] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
 * [ ] [`HAVING`](https://www.youtube.com/watch?v=5S0pIX9CocU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=50)
+## `ALIAS`
+* [ ] column
+* [ ] table
 ### comparison
 * [ ] [BOOLEAN](https://www.youtube.com/watch?v=uHMK1WfQ-O0&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=39)
 * [x] `=`, `>`, `>=`, `<`, `<=`, 
