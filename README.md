@@ -48,6 +48,7 @@
   - [clarify](#clarify)
   - [BACKUP](#backup)
   - [`SELECT`](#select-1)
+  - [[NULL value]](#null-value)
   - [`ALIAS`](#alias-1)
   - [JOIN](#join)
   - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except)
@@ -203,6 +204,20 @@ pg_restore -f disney.sql disney.tar
 * [x] `LIMIT`
   * [x] first n rows
   * [x] last n rows
+* [ ] `FETCH`
+```sql
+select * from province
+    order by area_km2 desc
+    limit 10;
+
+select * from province
+    order by area_km2 desc
+    fetch first 10 rows only;
+
+select * from province
+    order by area_km2 desc
+    offset 5 rows fetch first 3 rows only;
+```
 * [x] `WHERE`
 * [x] `ORDER BY`
 * [x] [`GROUP BY`](https://www.youtube.com/watch?v=2bvuthT-Arc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=49)
@@ -238,6 +253,7 @@ pg_restore -f disney.sql disney.tar
   * doc: https://www.postgresql.org/docs/current/functions-datetime.html
   * [ ] DATE_PART(`dow`, date): The day of the week as Sunday (0) to Saturday (6)
 * [x] `AGE('1995-07-20'::DATE)`
+  * Subtract arguments, producing a “symbolic” result that uses years and months, rather than just days
 * [ ] [format date/time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
 ### script
 ```sql
@@ -302,6 +318,9 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ```
 ## `SELECT`
 * [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
+## [NULL value]
+* [ ] [`NULL`](https://www.youtube.com/watch?v=uBhmnc3E6wI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=37)
+* [ ] [`COALESCE`]((https://www.youtube.com/watch?v=etR_T4ytnvc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=38))
 ## `ALIAS`
 * table
 ## JOIN
