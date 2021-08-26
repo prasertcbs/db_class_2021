@@ -45,6 +45,7 @@
 - [Week 4](#week-4)
   - [Materials](#materials-3)
     - [Required](#required-3)
+  - [clarify](#clarify)
   - [BACKUP](#backup)
   - [`SELECT`](#select-1)
   - [`ALIAS`](#alias-1)
@@ -234,6 +235,8 @@ pg_restore -f disney.sql disney.tar
 * [x] `TIMESTAMP`
 * [ ] `NOW()`
 * [x] `DATE_PART()`, `EXTRACT()`
+  * doc: https://www.postgresql.org/docs/current/functions-datetime.html
+  * [ ] DATE_PART(`dow`, date): The day of the week as Sunday (0) to Saturday (6)
 * [x] `AGE('1995-07-20'::DATE)`
 * [ ] [format date/time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
 ### script
@@ -282,6 +285,10 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
 * [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
 * [ ] Yummi book
   * [ ] Chapter 11, 12
+## clarify
+* [ ] age() function
+  * Subtract arguments, producing a “symbolic” result that uses years and months, rather than just days
+  * [ ] compare result format from psql and Azure Data Studio
 ## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
 * [ ] data directory
   * [ ] show data_directory;
@@ -307,5 +314,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ## FORMAT
 * [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
 * [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
+  * doc: https://www.postgresql.org/docs/9.1/functions-formatting.html
+  * [ ] dayname
 * [ ] [String](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
 ---
