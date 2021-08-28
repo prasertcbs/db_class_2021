@@ -52,8 +52,9 @@
   - [`ALIAS`](#alias-1)
   - [JOIN](#join)
   - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except)
-  - [CASE...WHEN](#casewhen)
+  - [`CASE...WHEN`](#casewhen)
   - [FORMAT](#format)
+    - [`to_char()`](#to_char)
   - [* [ ] String](#---string)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
@@ -329,8 +330,9 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
 * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
 ## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
-## [CASE...WHEN](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
-## [FORMAT](https://www.postgresql.org/docs/current/functions-formatting.html)
+## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
+## FORMAT
+### [`to_char()`](https://www.postgresql.org/docs/current/functions-formatting.html)
 * [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
 * [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
   * [ ] dayname
