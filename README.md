@@ -43,6 +43,7 @@
   - [DATE & TIME](#date--time)
     - [script](#script)
 - [Week 4](#week-4)
+  - [Annnouncement](#annnouncement)
   - [Materials](#materials-3)
     - [Required](#required-3)
   - [clarify](#clarify)
@@ -296,6 +297,9 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
 
 ---
 # [Week 4](https://github.com/prasertcbs/db_class_2021/tree/week4)
+## Annnouncement
+* [ ] [Mini quiz (10 points): Disney Database]
+  * 6-Sep-2021 9:15-10:00
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -304,8 +308,9 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
   * [ ] Chapter 11, 12
 ## clarify
 * [ ] age() function
-  * Subtract arguments, producing a “symbolic” result that uses years and months, rather than just days
+  * Subtract arguments, producing a "symbolic" result that uses years and months, rather than just days
   * [ ] compare result format from psql and Azure Data Studio
+  * [ ] focus on PnYnMnD
 ## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
 * [ ] data directory
   * [ ] show data_directory;
