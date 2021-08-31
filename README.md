@@ -317,7 +317,7 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
   * [ ] focus on PnYnMnD
 ## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
 * [ ] data directory
-  * [ ] show data_directory;
+  * [ ] `show data_directory;`
 * [ ] database (compress level=5)
 ```sh
 pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgres" --verbose --format=c --blobs --compress "5" "disney"
