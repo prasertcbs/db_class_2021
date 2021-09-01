@@ -299,7 +299,10 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
 # [Week 4](https://github.com/prasertcbs/db_class_2021/tree/week4)
 ## Annnouncement
 * [ ] Mini quiz (10 points): Disney Database
-  * 8-Sep-2021 9:15-10:00
+  * 8-Sep-2021 9:00-10:00
+  * stand by 8:45
+    * [ ] เช็คชื่อพร้อมบัตรนิสิต
+  * [ ] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
 * [ ] Team project (20 points)
   * [ ] Design database
   * [ ] Test data
