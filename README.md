@@ -53,10 +53,17 @@
   - [`ALIAS`](#alias-1)
   - [JOIN](#join)
   - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except)
+  - [* [x] `EXCEPT`](#-x-except)
+- [Week 5](#week-5)
+  - [Annnouncement](#annnouncement-1)
+  - [Materials](#materials-4)
+    - [Required](#required-4)
+  - [JOIN](#join-1)
   - [`CASE...WHEN`](#casewhen)
   - [FORMAT](#format)
     - [`to_char()`](#to_char)
-  - [* [ ] String](#---string)
+  - [View](#view)
+  - [Subquery](#subquery)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
@@ -345,11 +352,36 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [x] `UNION`
 * [x] `INTERSECT`
 * [x] `EXCEPT`
+---
+
+# [Week 5](https://github.com/prasertcbs/db_class_2021/tree/week5)
+## Annnouncement
+* [ ] Mini quiz (10 points): Disney Database
+  * 15-Sep-2021 9:00-10:00
+  * stand by 8:45
+    * [ ] เช็คชื่อพร้อมบัตรนิสิต
+  * [ ] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
+## Materials
+### Required
+* [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
+* [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
+* [ ] Yummi book
+  * [ ] Chapter 12, 13, 14
+## JOIN
+* [x] [`INNER`](https://www.youtube.com/watch?v=1TW6VdNdOpQ&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=57)
+* [x] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
+* [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
+* [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
 ## FORMAT
 ### [`to_char()`](https://www.postgresql.org/docs/current/functions-formatting.html)
 * [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
 * [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
-  * [ ] dayname
+  * [ ] day of week
+  * [ ] day name
+  * [ ] month name
 * [ ] [String](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
----
+## View
+* doc: https://www.postgresql.org/docs/current/sql-createview.html
+## Subquery
+* doc: https://www.postgresql.org/docs/13/functions-subquery.html
