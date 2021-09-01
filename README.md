@@ -298,15 +298,15 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
 ---
 # [Week 4](https://github.com/prasertcbs/db_class_2021/tree/week4)
 ## Annnouncement
-* [ ] Mini quiz (10 points): Disney Database
-  * 8-Sep-2021 9:00-10:00
+* [x] Mini quiz (10 points): Disney Database
+  * 15-Sep-2021 9:00-10:00
   * stand by 8:45
-    * [ ] เช็คชื่อพร้อมบัตรนิสิต
-  * [ ] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
-* [ ] Team project (20 points)
-  * [ ] Design database
-  * [ ] Test data
-  * [ ] Presentation
+    * [x] เช็คชื่อพร้อมบัตรนิสิต
+  * [x] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
+* [x] Team project (20 points)
+  * [x] Design database
+  * [x] Test data
+  * [x] Presentation
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -314,14 +314,14 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
 * [ ] Yummi book
   * [ ] Chapter 11, 12
 ## clarify
-* [ ] age() function
+* [x] age() function
   * Subtract arguments, producing a "symbolic" result that uses years and months, rather than just days
-  * [ ] compare result format from psql and Azure Data Studio
-  * [ ] focus on PnYnMnD
+  * [x] compare result format from psql and Azure Data Studio
+  * [x] focus on PnYnMnD
 ## [BACKUP](https://www.youtube.com/watch?v=5kh9zaQ9o60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=18)
-* [ ] data directory
-  * [ ] `show data_directory;`
-* [ ] database (compress level=5)
+* [x] data directory
+  * [x] `show data_directory;`
+* [x] database (compress level=5)
 ```sh
 pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgres" --verbose --format=c --blobs --compress "5" "disney"
 ```
@@ -330,18 +330,21 @@ pg_dump --file "disney.tar" --host "localhost" --port "5432" --username "postgre
 pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "postgres" --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --inserts --no-comments --encoding "UTF8" --table "public.movie_gross" "disney"
 ```
 ## `SELECT`
-* [ ] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
+* [x] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 ## NULL value
-* [ ] [`NULL`](https://www.youtube.com/watch?v=uBhmnc3E6wI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=37)
-* [ ] [`COALESCE`](https://www.youtube.com/watch?v=etR_T4ytnvc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=38)
+* [x] [`NULL`](https://www.youtube.com/watch?v=uBhmnc3E6wI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=37)
+* [x] [`COALESCE`](https://www.youtube.com/watch?v=etR_T4ytnvc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=38)
 ## `ALIAS`
-* table
+* [X] table
 ## JOIN
-* [ ] [`INNER`](https://www.youtube.com/watch?v=1TW6VdNdOpQ&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=57)
-* [ ] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
+* [x] [`INNER`](https://www.youtube.com/watch?v=1TW6VdNdOpQ&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=57)
+* [x] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
 * [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
 * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
 ## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
+* [x] `UNION`
+* [x] `INTERSECT`
+* [x] `EXCEPT`
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
 ## FORMAT
 ### [`to_char()`](https://www.postgresql.org/docs/current/functions-formatting.html)
