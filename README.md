@@ -59,9 +59,11 @@
   - [Materials](#materials-4)
     - [Required](#required-4)
   - [JOIN](#join-1)
+  - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except-1)
   - [`CASE...WHEN`](#casewhen)
   - [FORMAT](#format)
-    - [`to_char()`](#to_char)
+    - [`TO_CHAR()`](#to_char)
+  - [STRING](#string)
   - [View](#view)
   - [Subquery](#subquery)
 ---
@@ -340,6 +342,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [x] [`DISTINCT`](https://www.youtube.com/watch?v=OFFjErCXWXA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=33)
 ## NULL value
 * [x] [`NULL`](https://www.youtube.com/watch?v=uBhmnc3E6wI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=37)
+  * [ ] SELECT NULL = NULL, NULL != NULL, 1 + NULL, NULL IS NULL, NULL IS NOT NULL
 * [x] [`COALESCE`](https://www.youtube.com/watch?v=etR_T4ytnvc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=38)
 ## `ALIAS`
 * [X] table
@@ -372,15 +375,32 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [x] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
 * [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
 * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
+## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
+* [ ] `UNION` technique
+  * [ ] Add total line
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
+* [ ] list of applications
+  * [ ] 
+  * [ ] 
+  * [ ] 
 ## FORMAT
-### [`to_char()`](https://www.postgresql.org/docs/current/functions-formatting.html)
+### [`TO_CHAR()`](https://www.postgresql.org/docs/current/functions-formatting.html)
 * [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
 * [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
+* [ ] `TO_CHAR()` vs. `DATE_PART()`
   * [ ] day of week
   * [ ] day name
   * [ ] month name
-* [ ] [String](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
+## STRING
+* doc: https://www.postgresql.org/docs/current/functions-string.html
+* [ ] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
+  * [ ] `REPEAT()`
+* [ ] `UPPER`, `LOWER`, 
+* [ ] `LENGTH` (`=LEN()` in Excel)
+* [ ] `SUBSTR` (`=MID()` in Excel)
+* [ ] `STRPOS` (`=SEARCH()` in Excel) 
+* [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
+* [ ] `LTRIM`, `RTRIM`
 ## View
 * doc: https://www.postgresql.org/docs/current/sql-createview.html
 ## Subquery
