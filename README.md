@@ -66,6 +66,8 @@
   - [STRING](#string)
   - [View](#view)
   - [Subquery](#subquery)
+  - [Extras](#extras)
+    - [Markdown (.md file)](#markdown-md-file)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
@@ -311,7 +313,7 @@ select '2019-09-20 14:30'::timestamp - '2019-09-15 16:45'::timestamp,
   * 15-Sep-2021 9:00-10:00
   * stand by 8:45
     * [x] เช็คชื่อพร้อมบัตรนิสิต
-  * [x] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
+  * [x] Zoom พร้อมเปิดกล้อง no virtual background โดยพยายามให้กล้องอยู่ในระดับสายตา
 * [x] Team project (20 points)
   * [x] Design database
   * [x] Test data
@@ -363,7 +365,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
   * 15-Sep-2021 9:00-10:00
   * stand by 8:45
     * [ ] เช็คชื่อพร้อมบัตรนิสิต
-  * [ ] Zoom พร้อมเปิดกล้อง โดยพยายามให้กล้องอยู่ในระดับสายตา
+  * [ ] Zoom พร้อมเปิดกล้อง no virtual background โดยพยายามให้กล้องอยู่ในระดับสายตา
 ## Materials
 ### Required
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
@@ -405,3 +407,10 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * doc: https://www.postgresql.org/docs/current/sql-createview.html
 ## Subquery
 * doc: https://www.postgresql.org/docs/13/functions-subquery.html
+## Extras
+### Markdown (.md file)
+* Azure Data Studio
+  * [basic](https://www.youtube.com/watch?v=qSTx2No5Waw&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=4)
+  * [image](https://www.youtube.com/watch?v=M1v3JUsooc0&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=5)
+* Visual Studio Code
+  * [Table of Contents](https://www.youtube.com/watch?v=tL8fB2UpE_c)
