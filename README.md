@@ -385,16 +385,15 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
   * [x] Add total row
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
 * [x] list of applications
-  * [ ] bin/basket 
-  * [ ] 
+  * [x] bin/basket 
 ## FORMAT
 ### [`TO_CHAR()`](https://www.postgresql.org/docs/current/functions-formatting.html)
 * [x] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
 * [x] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
 * [x] `TO_CHAR()` vs. `DATE_PART()`
   * [x] day of week
-  * [ ] day name
-  * [ ] month name
+  * [x] day name
+  * [x] month name
 ## STRING
 * doc: https://www.postgresql.org/docs/current/functions-string.html
 * [ ] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
