@@ -399,6 +399,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * doc: https://www.postgresql.org/docs/current/functions-string.html
 * [ ] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
   * [ ] `REPEAT()`
+  * [ ] `CHR()`
 * [ ] `UPPER`, `LOWER`, 
 * [ ] `LENGTH` (`=LEN()` in Excel)
 * [ ] `SUBSTR` (`=MID()` in Excel)
