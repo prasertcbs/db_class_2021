@@ -55,6 +55,7 @@
   - [`UNION`, `INTERSECT`, `EXCEPT`](#union-intersect-except)
   - [* [x] `EXCEPT`](#-x-except)
 - [Week 5](#week-5)
+  - [Group project](#group-project)
   - [Annnouncement](#annnouncement-1)
   - [Materials](#materials-4)
     - [Required](#required-4)
@@ -360,6 +361,8 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ---
 
 # [Week 5](https://github.com/prasertcbs/db_class_2021/tree/week5)
+## Group project
+* [ ] [instruction](./group_project_guidelines_2602446_2021.md)
 ## Annnouncement
 * [ ] Mini quiz (10 points): Disney Database
   * 15-Sep-2021 9:00-10:00
@@ -379,10 +382,9 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
 ## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
 * [ ] `UNION` technique
-  * [ ] Add total line
+  * [ ] Add total row
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
 * [ ] list of applications
-  * [ ] 
   * [ ] 
   * [ ] 
 ## FORMAT
