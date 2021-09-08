@@ -364,7 +364,7 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ## Group project
 * [ ] [instruction](./group_project_guidelines_2602446_2021.md)
 ## Annnouncement
-* [ ] Mini quiz (10 points): Disney Database
+* [x] Mini quiz (10 points): Disney Database
   * 15-Sep-2021 9:00-10:00
   * stand by 8:45
     * [ ] เช็คชื่อพร้อมบัตรนิสิต
@@ -378,21 +378,21 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 ## JOIN
 * [x] [`INNER`](https://www.youtube.com/watch?v=1TW6VdNdOpQ&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=57)
 * [x] [`OUTER`](https://www.youtube.com/watch?v=MZPull_eaSE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=58)
-* [ ] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
+* [x] [`SELF`](https://www.youtube.com/watch?v=PLpOPD5I45o&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=60)
 * [ ] [`CROSS`](https://www.youtube.com/watch?v=AAIrhBJzs64&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=62)
 ## [`UNION`, `INTERSECT`, `EXCEPT`](https://www.youtube.com/watch?v=_gMYgFWwuHw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=56)
-* [ ] `UNION` technique
-  * [ ] Add total row
+* [x] `UNION` technique
+  * [x] Add total row
 ## [`CASE...WHEN`](https://www.youtube.com/watch?v=YCjn46wB32E&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=44)
-* [ ] list of applications
-  * [ ] 
+* [x] list of applications
+  * [ ] bin/basket 
   * [ ] 
 ## FORMAT
 ### [`TO_CHAR()`](https://www.postgresql.org/docs/current/functions-formatting.html)
-* [ ] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
-* [ ] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
-* [ ] `TO_CHAR()` vs. `DATE_PART()`
-  * [ ] day of week
+* [x] [Number](https://www.youtube.com/watch?v=uOhC9kMi_Ac&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=51)
+* [x] [Date/Time](https://www.youtube.com/watch?v=GI2VEr3opsc&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=54)
+* [x] `TO_CHAR()` vs. `DATE_PART()`
+  * [x] day of week
   * [ ] day name
   * [ ] month name
 ## STRING
@@ -408,8 +408,11 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] `LTRIM`, `RTRIM`
 ## [View](https://www.youtube.com/watch?v=4_h0N1wSAYw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=66)
 * doc: https://www.postgresql.org/docs/current/sql-createview.html
+* [x] Virtual Table
 ## [Subquery](https://www.youtube.com/watch?v=IQ8Yv_z5ObY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=65)
 * doc: https://www.postgresql.org/docs/13/functions-subquery.html
+* [x] as column expression
+* [x] as table expression
 ## Extras
 ### Markdown (.md file)
 * Azure Data Studio
