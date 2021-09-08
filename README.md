@@ -64,9 +64,13 @@
   - [`CASE...WHEN`](#casewhen)
   - [FORMAT](#format)
     - [`TO_CHAR()`](#to_char)
-  - [STRING](#string)
   - [View](#view)
   - [Subquery](#subquery)
+  - [Common Table Expressions (CTE)](#common-table-expressions-cte)
+- [Week 6](#week-6)
+  - [Group project](#group-project-1)
+  - [Window functions](#window-functions)
+  - [STRING](#string)
   - [Extras](#extras)
     - [Markdown (.md file)](#markdown-md-file)
 ---
@@ -394,8 +398,43 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
   * [x] day of week
   * [x] day name
   * [x] month name
+## [View](https://www.youtube.com/watch?v=4_h0N1wSAYw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=66)
+* doc: https://www.postgresql.org/docs/current/sql-createview.html
+* [x] Virtual Table
+## [Subquery](https://www.youtube.com/watch?v=IQ8Yv_z5ObY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=65)
+* doc: https://www.postgresql.org/docs/13/functions-subquery.html
+* [x] as column expression
+* [x] as table expression
+## Common Table Expressions (CTE)
+* doc: https://www.postgresql.org/docs/13/queries-with.html
+* [how to](https://www.youtube.com/watch?v=Jtx3On2Cr0c&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=67)
+
+---
+# [Week 6](https://github.com/prasertcbs/db_class_2021/tree/week6)
+* [ ] Mini quiz (10 points): Disney Database
+  * 15-Sep-2021 9:00-10:00
+  * stand by 8:45
+    * [ ] เช็คชื่อพร้อมบัตรนิสิต
+  * [ ] Zoom พร้อมเปิดกล้อง no virtual background โดยพยายามให้กล้องอยู่ในระดับสายตา
+## Group project
+* [ ] [instruction](./group_project_guidelines_2602446_2021.md)
+## Window functions
+* doc: https://www.postgresql.org/docs/13/tutorial-window.html
+* [`ROW_NUMBER`](https://www.youtube.com/watch?v=XQF9NKvdlpE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=68)
+* [`RANK`, `DENSE_RANK`](https://www.youtube.com/watch?v=X5WPi2CGlss&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=69)
+* Aggregate function
+  * [ ] Grand total
+  * [ ] Running (cumulative) total
+```sql
+-- disney database
+select year, studio_entertainment,
+    sum(studio_entertainment) over () grand_total,
+    sum(studio_entertainment) over (order by year) cumulative_total
+    from revenue
+```
 ## STRING
 * doc: https://www.postgresql.org/docs/current/functions-string.html
+* [ ] [`SPLIT_PART`](https://www.youtube.com/watch?v=cc0NV5ZP-6Q&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=76)
 * [ ] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
   * [ ] `REPEAT()`
   * [ ] `CHR()`
@@ -405,13 +444,6 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] `STRPOS` (`=SEARCH()` in Excel) 
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
 * [ ] `LTRIM`, `RTRIM`
-## [View](https://www.youtube.com/watch?v=4_h0N1wSAYw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=66)
-* doc: https://www.postgresql.org/docs/current/sql-createview.html
-* [x] Virtual Table
-## [Subquery](https://www.youtube.com/watch?v=IQ8Yv_z5ObY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=65)
-* doc: https://www.postgresql.org/docs/13/functions-subquery.html
-* [x] as column expression
-* [x] as table expression
 ## Extras
 ### Markdown (.md file)
 * Azure Data Studio
