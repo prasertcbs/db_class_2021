@@ -405,9 +405,9 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 * [ ] `STRPOS` (`=SEARCH()` in Excel) 
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
 * [ ] `LTRIM`, `RTRIM`
-## View
+## [View](https://www.youtube.com/watch?v=4_h0N1wSAYw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=66)
 * doc: https://www.postgresql.org/docs/current/sql-createview.html
-## Subquery
+## [Subquery](https://www.youtube.com/watch?v=IQ8Yv_z5ObY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=65)
 * doc: https://www.postgresql.org/docs/13/functions-subquery.html
 ## Extras
 ### Markdown (.md file)
