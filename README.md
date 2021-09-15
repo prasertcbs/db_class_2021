@@ -490,8 +490,8 @@ select year, studio_entertainment,
 * [ ] Read PostgreSQL data with Excel PowerQuery 
   * [ ] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
   * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
-* [ ] [BYTEA: store `Binary` data]
-  * [ ] [read/write image] (https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
+* [ ] BYTEA: store `Binary` data
+  * [ ] [read/write image](https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
 ### Chart in Azure Data Studio
 * [ ] Line
 * [ ] Bar
