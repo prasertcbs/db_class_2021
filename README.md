@@ -79,6 +79,7 @@
   - [INSERT, UPDATE, DELETE, TRUNCATE](#insert-update-delete-truncate)
   - [STRING](#string)
   - [Extras](#extras-1)
+    - [Chart in Azure Data Studio](#chart-in-azure-data-studio)
     - [Mock data techniques](#mock-data-techniques)
     - [Adv. GROUPING](#adv-grouping)
 ---
@@ -491,6 +492,9 @@ select year, studio_entertainment,
   * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
 * [ ] [BYTEA: store `Binary` data]
   * [ ] [read/write image] (https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
+### Chart in Azure Data Studio
+* [ ] Line
+* [ ] Bar
 ### Mock data techniques
 * [ ] [สอน Excel: เทคนิคการสุ่มข้อมูลที่มีความน่าจะเป็นในการเกิดไม่เท่ากัน](https://youtu.be/ybQbXXMuzCM)
 * [ ] [สอน Excel: เทคนิคการสร้างตัวเลขสุ่มที่เป็นไปตามการแจกแจงแบบต่าง ๆ](https://youtu.be/vCoRjY-Cx34)
