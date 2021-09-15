@@ -72,6 +72,7 @@
   - [Window functions](#window-functions)
   - [STRING](#string)
   - [Extras](#extras)
+    - [Mock data generator](#mock-data-generator)
     - [Markdown (.md file)](#markdown-md-file)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
@@ -417,14 +418,14 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
     * [x] เช็คชื่อพร้อมบัตรนิสิต
   * [x] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
 ## Group project
-* [ ] [instruction](./group_project_guidelines_2602446_2021.md)
+* [x] [instruction](./group_project_guidelines_2602446_2021.md)
 ## Window functions
 * doc: https://www.postgresql.org/docs/13/tutorial-window.html
 * [`ROW_NUMBER`](https://www.youtube.com/watch?v=XQF9NKvdlpE&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=68)
 * [`RANK`, `DENSE_RANK`](https://www.youtube.com/watch?v=X5WPi2CGlss&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=69)
 * Aggregate function
-  * [ ] Grand total
-  * [ ] Running (cumulative) total
+  * [x] Grand total
+  * [x] Running (cumulative) total
 ```sql
 -- disney database
 select year, studio_entertainment,
@@ -445,6 +446,8 @@ select year, studio_entertainment,
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
 * [ ] `LTRIM`, `RTRIM`
 ## Extras
+### Mock data generator
+* [x] [](https://mockaroo.com/)
 ### Markdown (.md file)
 * Azure Data Studio
   * [basic](https://www.youtube.com/watch?v=qSTx2No5Waw&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=4)
