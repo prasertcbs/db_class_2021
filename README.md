@@ -70,10 +70,17 @@
 - [Week 6](#week-6)
   - [Group project](#group-project-1)
   - [Window functions](#window-functions)
-  - [STRING](#string)
   - [Extras](#extras)
     - [Mock data generator](#mock-data-generator)
     - [Markdown (.md file)](#markdown-md-file)
+- [Week 7](#week-7)
+  - [Announcement](#announcement-1)
+    - [Required](#required-5)
+  - [INSERT, UPDATE, DELETE, TRUNCATE](#insert-update-delete-truncate)
+  - [STRING](#string)
+  - [Extras](#extras-1)
+    - [Mock data techniques](#mock-data-techniques)
+    - [Adv. GROUPING](#adv-grouping)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
@@ -433,6 +440,38 @@ select year, studio_entertainment,
     sum(studio_entertainment) over (order by year) cumulative_total
     from revenue
 ```
+## Extras
+### Mock data generator
+* [x] [Mockaroo](https://www.mockaroo.com/)
+### Markdown (.md file)
+* Azure Data Studio
+  * [basic](https://www.youtube.com/watch?v=qSTx2No5Waw&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=4)
+  * [image](https://www.youtube.com/watch?v=M1v3JUsooc0&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=5)
+* Visual Studio Code
+  * [Table of Contents](https://www.youtube.com/watch?v=tL8fB2UpE_c)
+
+---
+# [Week 7](https://github.com/prasertcbs/db_class_2021/tree/week7)
+## Announcement
+* [ ] Quiz 2 (30 points): Yummi Database
+  * 29-Sep-2021 9:00-11:00
+  * stand by 8:45
+    * [ ] เช็คชื่อพร้อมบัตรนิสิต
+  * [ ] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
+### Required
+* [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
+* [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
+* [ ] Yummi book
+  * [ ] Chapter 15
+## INSERT, UPDATE, DELETE, TRUNCATE
+* [ ] [`INSERT`](https://www.youtube.com/watch?v=OeLxYLLhT9c&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=71)
+* [ ] [`INSERT INTO ... SELECT ...`](https://www.youtube.com/watch?v=nZrsqa1wFZo&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=72)
+* [ ] [`SELECT INTO`](https://www.youtube.com/watch?v=tyBYnn94DQU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=73)
+* [ ] [`UPDATE`](https://www.youtube.com/watch?v=akp2Ns4KoeA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=74)
+  * [ ] [`UPDATE JOIN`](https://www.postgresqltutorial.com/postgresql-update-join/)
+* [ ] [`DELETE`](https://www.youtube.com/watch?v=ku-_yEg3k60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=75)
+  * [ ] [`DELETE JOIN`](https://www.postgresqltutorial.com/postgresql-delete-join/)
+* [ ] EXPORT TABLE (SQL INSERT)
 ## STRING
 * doc: https://www.postgresql.org/docs/current/functions-string.html
 * [ ] [`SPLIT_PART`](https://www.youtube.com/watch?v=cc0NV5ZP-6Q&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=76)
@@ -446,11 +485,15 @@ select year, studio_entertainment,
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
 * [ ] `LTRIM`, `RTRIM`
 ## Extras
-### Mock data generator
-* [x] [](https://mockaroo.com/)
-### Markdown (.md file)
-* Azure Data Studio
-  * [basic](https://www.youtube.com/watch?v=qSTx2No5Waw&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=4)
-  * [image](https://www.youtube.com/watch?v=M1v3JUsooc0&list=PLoTScYm9O0GEM41XeHVWrSQUAeSEUoWDz&index=5)
-* Visual Studio Code
-  * [Table of Contents](https://www.youtube.com/watch?v=tL8fB2UpE_c)
+* [ ] [ARRAY](https://www.youtube.com/watch?v=eUWeOn6iN30&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=83)
+* [ ] Read PostgreSQL data with Excel PowerQuery 
+  * [ ] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
+  * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
+* [ ] [BYTEA: store `Binary` data]
+  * [ ] [read/write image] (https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
+### Mock data techniques
+* [ ] [สอน Excel: เทคนิคการสุ่มข้อมูลที่มีความน่าจะเป็นในการเกิดไม่เท่ากัน](https://youtu.be/ybQbXXMuzCM)
+* [ ] [สอน Excel: เทคนิคการสร้างตัวเลขสุ่มที่เป็นไปตามการแจกแจงแบบต่าง ๆ](https://youtu.be/vCoRjY-Cx34)
+### Adv. GROUPING
+* [ ] [`GROUPING SETS`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
+* [ ] [`ROLLUP`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
