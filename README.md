@@ -411,11 +411,11 @@ pg_dump --file "movie_gross.sql" --host "localhost" --port "5432" --username "po
 
 ---
 # [Week 6](https://github.com/prasertcbs/db_class_2021/tree/week6)
-* [ ] Mini quiz (10 points): Disney Database
+* [x] Mini quiz (10 points): Disney Database
   * 15-Sep-2021 9:00-10:00
   * stand by 8:45
-    * [ ] เช็คชื่อพร้อมบัตรนิสิต
-  * [ ] Zoom พร้อมเปิดกล้อง no virtual background โดยพยายามให้กล้องอยู่ในระดับสายตา
+    * [x] เช็คชื่อพร้อมบัตรนิสิต
+  * [x] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
 ## Group project
 * [ ] [instruction](./group_project_guidelines_2602446_2021.md)
 ## Window functions
