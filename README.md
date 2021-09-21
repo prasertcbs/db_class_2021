@@ -75,7 +75,7 @@
     - [Markdown (.md file)](#markdown-md-file)
 - [Week 7](#week-7)
   - [Announcement](#announcement-1)
-    - [Required](#required-5)
+  - [Required materials](#required-materials)
   - [INSERT, UPDATE, DELETE, TRUNCATE](#insert-update-delete-truncate)
   - [STRING](#string)
   - [Extras](#extras-1)
@@ -459,7 +459,7 @@ select year, studio_entertainment,
   * stand by 8:45
     * [ ] เช็คชื่อพร้อมบัตรนิสิต
   * [ ] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
-### Required
+## Required materials
 * [ ] [YouTube](https://www.youtube.com/watch?v=6vEbtwMnXYs&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH)
 * [ ] [Official PostgreSQL documentation](https://www.postgresql.org/docs/)
 * [ ] Yummi book
