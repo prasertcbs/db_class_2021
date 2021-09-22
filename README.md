@@ -454,8 +454,8 @@ select year, studio_entertainment,
 ---
 # [Week 7](https://github.com/prasertcbs/db_class_2021/tree/week7)
 ## Announcement
-* [ ] Quiz 2 (30 points): Yummi Database
-  * (29-Sep-2021) or (6-Oct-2021) 9:00-11:00
+* [x] Quiz 2 (30 points): Yummi Database
+  * 29-Sep-2021 9:00-11:00
   * stand by 8:45
     * [ ] เช็คชื่อพร้อมบัตรนิสิต
   * [ ] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
@@ -465,22 +465,23 @@ select year, studio_entertainment,
 * [ ] Yummi book
   * [ ] Chapter 15
 ## INSERT, UPDATE, DELETE, TRUNCATE
-* [ ] [`INSERT`](https://www.youtube.com/watch?v=OeLxYLLhT9c&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=71)
-* [ ] [`INSERT INTO ... SELECT ...`](https://www.youtube.com/watch?v=nZrsqa1wFZo&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=72)
-* [ ] [`SELECT INTO`](https://www.youtube.com/watch?v=tyBYnn94DQU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=73)
-* [ ] [`UPDATE`](https://www.youtube.com/watch?v=akp2Ns4KoeA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=74)
-  * [ ] [`UPDATE JOIN`](https://www.postgresqltutorial.com/postgresql-update-join/)
-* [ ] [`DELETE`](https://www.youtube.com/watch?v=ku-_yEg3k60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=75)
-  * [ ] [`DELETE JOIN`](https://www.postgresqltutorial.com/postgresql-delete-join/)
+* [x] [`INSERT`](https://www.youtube.com/watch?v=OeLxYLLhT9c&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=71)
+* [x] [`INSERT INTO ... SELECT ...`](https://www.youtube.com/watch?v=nZrsqa1wFZo&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=72)
+* [x] [`SELECT INTO`](https://www.youtube.com/watch?v=tyBYnn94DQU&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=73)
+* [x] [`UPDATE`](https://www.youtube.com/watch?v=akp2Ns4KoeA&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=74)
+  * [x] [`UPDATE JOIN`](https://www.postgresqltutorial.com/postgresql-update-join/)
+* [x] [`DELETE`](https://www.youtube.com/watch?v=ku-_yEg3k60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=75)
+  * [x] [`DELETE JOIN`](https://www.postgresqltutorial.com/postgresql-delete-join/)
 * [ ] EXPORT TABLE (SQL INSERT)
 ## STRING
 * doc: https://www.postgresql.org/docs/current/functions-string.html
 * [ ] [`SPLIT_PART`](https://www.youtube.com/watch?v=cc0NV5ZP-6Q&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=76)
-* [ ] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
-  * [ ] `REPEAT()`
-  * [ ] `CHR()`
-* [ ] `UPPER`, `LOWER`, 
-* [ ] `LENGTH` (`=LEN()` in Excel)
+* [x] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
+  * [x] `REPEAT()`
+  * [x] `CHR()`
+* [x] `UPPER`, `LOWER`, 
+* [x] `LENGTH` (`=LEN()` in Excel)
+* [x] `LEFT`, `RIGHT` ('=LEFT(), =RIGHT()` in Excel)
 * [ ] `SUBSTR` (`=MID()` in Excel)
 * [ ] `STRPOS` (`=SEARCH()` in Excel) 
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
@@ -489,12 +490,14 @@ select year, studio_entertainment,
 * [ ] [`GROUPING SETS`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
 * [ ] [`ROLLUP`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
 ### Chart in Azure Data Studio
-* [ ] Line
-* [ ] Bar
+* [x] Line
+* [x] Bar
 ## Extras
-* [ ] Read PostgreSQL data with Excel PowerQuery 
-  * [ ] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
-  * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
+* [x] Read PostgreSQL data with Excel PowerQuery 
+  * [x] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
+  * [x] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
+  * [x] [Parameterized Query]()
+* [x] `generate_series`
 * [ ] [ARRAY](https://www.youtube.com/watch?v=eUWeOn6iN30&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=83)
 * [ ] [JSON](https://www.youtube.com/watch?v=iRNJ0U26P24&list=PLoTScYm9O0GFdBgM1eR_n8UVL797V6Ge0)
 * [ ] BYTEA: store `Binary` data
