@@ -78,10 +78,10 @@
   - [Required materials](#required-materials)
   - [INSERT, UPDATE, DELETE, TRUNCATE](#insert-update-delete-truncate)
   - [STRING](#string)
-  - [Extras](#extras-1)
-    - [Chart in Azure Data Studio](#chart-in-azure-data-studio)
-    - [Mock data techniques](#mock-data-techniques)
     - [Adv. GROUPING](#adv-grouping)
+    - [Chart in Azure Data Studio](#chart-in-azure-data-studio)
+  - [Extras](#extras-1)
+    - [Mock data techniques](#mock-data-techniques)
 ---
 # 2602446 DATABASE APPLN MGT (2021/1) 
 # [Week 1](https://github.com/prasertcbs/db_class_2021/tree/week3)
@@ -485,19 +485,20 @@ select year, studio_entertainment,
 * [ ] `STRPOS` (`=SEARCH()` in Excel) 
 * [ ] `REPLACE` (`=SUBSTITUTE()` in Excel)
 * [ ] `LTRIM`, `RTRIM`
-## Extras
-* [ ] [ARRAY](https://www.youtube.com/watch?v=eUWeOn6iN30&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=83)
-* [ ] Read PostgreSQL data with Excel PowerQuery 
-  * [ ] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
-  * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
-* [ ] BYTEA: store `Binary` data
-  * [ ] [read/write image](https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
-### Chart in Azure Data Studio
-* [ ] Line
-* [ ] Bar
-### Mock data techniques
-* [ ] [สอน Excel: เทคนิคการสุ่มข้อมูลที่มีความน่าจะเป็นในการเกิดไม่เท่ากัน](https://youtu.be/ybQbXXMuzCM)
-* [ ] [สอน Excel: เทคนิคการสร้างตัวเลขสุ่มที่เป็นไปตามการแจกแจงแบบต่าง ๆ](https://youtu.be/vCoRjY-Cx34)
 ### Adv. GROUPING
 * [ ] [`GROUPING SETS`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
 * [ ] [`ROLLUP`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
+### Chart in Azure Data Studio
+* [ ] Line
+* [ ] Bar
+## Extras
+* [ ] Read PostgreSQL data with Excel PowerQuery 
+  * [ ] [Install ODBC](https://www.youtube.com/watch?v=6wmR5Lb5cdw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=111)
+  * [ ] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
+* [ ] [ARRAY](https://www.youtube.com/watch?v=eUWeOn6iN30&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=83)
+* [ ] [JSON](https://www.youtube.com/watch?v=iRNJ0U26P24&list=PLoTScYm9O0GFdBgM1eR_n8UVL797V6Ge0)
+* [ ] BYTEA: store `Binary` data
+  * [ ] [read/write image](https://www.youtube.com/watch?v=uWDjkPJToaI&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=114)
+### Mock data techniques
+* [ ] [สอน Excel: เทคนิคการสุ่มข้อมูลที่มีความน่าจะเป็นในการเกิดไม่เท่ากัน](https://youtu.be/ybQbXXMuzCM)
+* [ ] [สอน Excel: เทคนิคการสร้างตัวเลขสุ่มที่เป็นไปตามการแจกแจงแบบต่าง ๆ](https://youtu.be/vCoRjY-Cx34)
