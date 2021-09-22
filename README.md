@@ -455,7 +455,7 @@ select year, studio_entertainment,
 # [Week 7](https://github.com/prasertcbs/db_class_2021/tree/week7)
 ## Announcement
 * [ ] Quiz 2 (30 points): Yummi Database
-  * 29-Sep-2021 9:00-11:00
+  * (29-Sep-2021) or (6-Oct-2021) 9:00-11:00
   * stand by 8:45
     * [ ] เช็คชื่อพร้อมบัตรนิสิต
   * [ ] Zoom พร้อมเปิดกล้อง no virtual background, no background blur โดยพยายามให้กล้องอยู่ในระดับสายตา
