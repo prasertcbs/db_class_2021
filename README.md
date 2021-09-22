@@ -498,6 +498,7 @@ select year, studio_entertainment,
   * [x] [Read PostgreSQL data](https://www.youtube.com/watch?v=_TTb_rqE5mY&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=112)
   * [x] [Parameterized Query](https://www.youtube.com/watch?v=pou4R3vr_Xw&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=113)
 * [x] `generate_series`
+* [x] `random()`
 * [ ] [ARRAY](https://www.youtube.com/watch?v=eUWeOn6iN30&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=83)
 * [ ] [JSON](https://www.youtube.com/watch?v=iRNJ0U26P24&list=PLoTScYm9O0GFdBgM1eR_n8UVL797V6Ge0)
 * [ ] BYTEA: store `Binary` data
