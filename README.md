@@ -472,13 +472,13 @@ select year, studio_entertainment,
   * [x] [`UPDATE JOIN`](https://www.postgresqltutorial.com/postgresql-update-join/)
 * [x] [`DELETE`](https://www.youtube.com/watch?v=ku-_yEg3k60&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=75)
   * [x] [`DELETE JOIN`](https://www.postgresqltutorial.com/postgresql-delete-join/)
-* [ ] EXPORT TABLE (SQL INSERT)
+* [x] EXPORT TABLE (SQL INSERT)
 ## STRING
 * doc: https://www.postgresql.org/docs/current/functions-string.html
-* [ ] [`SPLIT_PART`](https://www.youtube.com/watch?v=cc0NV5ZP-6Q&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=76)
 * [x] [data bar](https://www.youtube.com/watch?v=RUa3IPWi2M8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=55)
   * [x] `REPEAT()`
   * [x] `CHR()`
+* [ ] [`SPLIT_PART`](https://www.youtube.com/watch?v=cc0NV5ZP-6Q&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=76)
 * [x] `UPPER`, `LOWER`, 
 * [x] `LENGTH` (`=LEN()` in Excel)
 * [x] `LEFT`, `RIGHT` ('=LEFT(), =RIGHT()` in Excel)
@@ -488,7 +488,7 @@ select year, studio_entertainment,
 * [ ] `LTRIM`, `RTRIM`
 ### Adv. GROUPING
 * [ ] [`GROUPING SETS`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
-* [ ] [`ROLLUP`](https://www.youtube.com/watch?v=LnnDuaxfgas&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=80)
+* [ ] [`ROLLUP`](https://www.youtube.com/watch?v=zGA5pnJrnl8&list=PLoTScYm9O0GGi_NqmIu43B-PsxA0wtnyH&index=81)
 ### Chart in Azure Data Studio
 * [x] Line
 * [x] Bar
